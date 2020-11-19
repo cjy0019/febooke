@@ -81,7 +81,7 @@ body::before {
 .logo {
   margin: 0;
 }
-.logo>a {
+.logo > a {
   padding: 20px;
   /* font-size: 90px; */
   /* padding: 90px; */
@@ -99,93 +99,96 @@ body::before {
   /* background-color: blue; */
   /* opacity: 0; */
 }
-/* .logo-image.showImage {
+.logo-image.showImage {
   opacity: 1;
-  transition:1S;
-} */
+  transition: 1s;
+}
 /* 헤딩 텍스트 */
-/* .logo-title {
+.logo-title {
   font-weight: 400;
-  color: rgba(245,234,244,0.6);
+  color: rgba(245, 234, 244, 0.6);
   font-size: 4rem;
   line-height: 6rem;
   margin: 0;
   transition: 2s;
-} */
-/* .logo-title span{
+}
+.logo-title span {
   position: absolute;
 }
-.logo-title.wT{
+.logo-title.wT {
   font-weight: 500;
   font-size: 5rem;
 }
 .logo-title .logoT {
-  font-size : 6rem;
-  color: rgba(255,255,255,1);
-} */
-/* .logo-title.midTime{
-  /* color: rgb(255,255,255,0) 
-} */
-/* .logo-title.midTime span{
-} */
-/* .midTime .firstT {
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 1);
+}
+.logo-title.midTime {
+  color: rgb(255, 255, 255, 0);
+}
+.logo-title.midTime span {
+}
+.midTime .firstT {
   position: absolute;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   transition: 2s;
 }
 .midTime .secondT {
   position: absolute;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   transition: 2s;
-} */
-/* @keyframes moveF{
-  0%{
-  }50%{
-    top: 5%;
-     left: 50%;
-     color: #ff0;
-     font-size: 0.3rem;
-    } 
-    90%{
-      font-size: 3.5rem;
-      top: 24%;
-      left: 1.5%;
-      color: #ff0;
-      opacity:0.3;
-    }100%{
-      left:1%;
-      opacity:0.2;
-    }
-  }
-  @keyframes moveE{
-    0%{
-    } 
-    50% {
-      top: 12%;
-      left: 80%;
-      color: #ff0;
-      font-size: 0.3rem;
-    }
-    90%{
-      font-size: 3.5rem;
-      top: 24%;
-      left: 5%;
-      color: #ff0;
-      opacity:0.4;
-    }100%{
-      opacity:0.3;
-      left: 4%;
-   }
 }
-.lastTime .firstT{
+@keyframes moveF {
+  0% {
+  }
+  50% {
+    top: 5%;
+    left: 50%;
+    color: #ff0;
+    font-size: 0.3rem;
+  }
+  90% {
+    font-size: 3.5rem;
+    top: 24%;
+    left: 1.5%;
+    color: #ff0;
+    opacity: 0.3;
+  }
+  100% {
+    left: 1%;
+    opacity: 0.2;
+  }
+}
+@keyframes moveE {
+  0% {
+  }
+  50% {
+    top: 12%;
+    left: 80%;
+    color: #ff0;
+    font-size: 0.3rem;
+  }
+  90% {
+    font-size: 3.5rem;
+    top: 24%;
+    left: 5%;
+    color: #ff0;
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.3;
+    left: 4%;
+  }
+}
+.lastTime .firstT {
   animation: moveF 2s forwards;
 }
-.lastTime .secondT{
+.lastTime .secondT {
   animation: moveE 2s forwards;
 }
-.logo-title.downT span{
+.logo-title.downT span {
   z-index: -10;
-} */
+}
 /* 타이머 */
 .header-timer {
   font-size: 18px;
@@ -305,7 +308,8 @@ body::before {
   transition: 1s;
 }
 @keyframes colorToggle {
-  0% {}
+  0% {
+  }
   50% {
     color: #655ba0;
     font-size: 5vw;
@@ -352,6 +356,7 @@ body::before {
   height: 500px;
   width: 100%;
   background-color: black;
+  cursor: pointer;
   /* padding: 80px 70px; */
 }
 .tech-title-btn {
@@ -366,11 +371,12 @@ body::before {
   color: rgba(240, 240, 240, 1);
   margin-top: 40px;
   padding: 10px;
+  cursor: pointer;
 }
-.tech-title-btn:hover{
+.tech-title-btn:hover {
   color: rgba(240, 240, 240, 1);
   background-color: #655ba0;
-  transition: .5s;
+  transition: 0.5s;
 }
 /* 기술게시판 new 게시판 */
 /* 캐러셀 슬라이더 ui 코드 건들지 마세요 */
@@ -388,7 +394,7 @@ body::before {
   padding: 5px;
 }
 .carousel-item img {
-  vertical-align: bottom
+  vertical-align: bottom;
 }
 /*prev next 버튼*/
 .carousel-control {
@@ -505,10 +511,10 @@ body::before {
   list-style-type: none;
   height: 15vh;
 }
-.tech-list>li>a {
+.tech-list > li > a {
   text-decoration: none;
 }
-.tech-list>li {
+.tech-list > li {
   font-size: 20px;
   margin-left: 20px;
   margin-top: 20px;
@@ -556,8 +562,9 @@ body::before {
   list-style-type: none;
   padding: 0;
 }
-.current-users-list {}
-.current-users-list>li {
+.current-users-list {
+}
+.current-users-list > li {
   margin-top: 10px;
 }
 .current-users-title {
@@ -568,7 +575,7 @@ body::before {
   list-style-type: none;
   padding: 0;
 }
-.friends-list>li {
+.friends-list > li {
   margin-top: 10px;
 }
 .friends-users-title {
@@ -586,7 +593,7 @@ body::before {
   width: 100%;
   outline: none;
 }
-.creator{
+.creator {
   background-image: url(../image/6571675827_7ad09d66f6_k.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -597,19 +604,19 @@ body::before {
   background-image: none;
   background-color: black;
 }
-.creator-title{
+.creator-title {
   font-size: 3vw;
 }
-.footer{
+.footer {
   height: 60px;
   display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+  flex-flow: column nowrap;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-	padding-left: 170px;
+  padding-left: 170px;
   padding-right: 100px;
 }
-.copyright{
+.copyright {
   margin-top: 25px;
-	display: block;
+  display: block;
 }
