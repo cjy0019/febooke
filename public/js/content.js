@@ -93,8 +93,6 @@ window.onload = async () => {
         let dateTime = new Date();
         if (JSON.parse(sessionStorage.getItem('login'))) {
 
-       
-
             const redId = await fetch('/board');
 
             let arr3 = await redId.json();
@@ -113,6 +111,7 @@ window.onload = async () => {
                     commentId: arr3.find(item => item === contentId.id)
                 })
             })
+            
 
         } else {
             console.log('로그인이 필요합니다')
@@ -188,7 +187,7 @@ window.onload = async () => {
         arr = await res.json();
         console.log(arr)
 
-        const removeId = arr.find(item => item.id === +e.target.id);
+        const removeId = arr.find(item => item.nickname === loginNickname.nickname );
         if (loginNickname.nickname !== contentId.nickname) return;
         await fetch(`/comment/${removeId.id}`, {
             method: 'DELETE'
@@ -199,6 +198,7 @@ window.onload = async () => {
         //     method: 'DELETE'
         // });
         // sessionStorage.clear('comment')
+        location.reload()
 
     });
 
@@ -220,6 +220,7 @@ window.onload = async () => {
         $commentText[i].value = arr[i].commented.trim();
         console.log(arr);
 
+    
 
     });
     console.log($commentremake);
@@ -286,13 +287,12 @@ const render = (content) => {
         html += `<span class="board-name">TECH Board</span>
         <h2 class="content-heading">${item.title}</h2>
     <div class="member-info">
-      <span class="profile">프사</span>
       <div class="content-info">
         <span class="nickname">${item.nickname}</span>
         <span class="date">${item.time}</span>
       </div>
       <span class="click-count">${item.clickcount}</span>
-
+      <button class="go-main">메인 패이지</button>
     <div class="written">
     <button class="modify">수정</button>
     <button class="delete">삭제</button>

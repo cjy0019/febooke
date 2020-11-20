@@ -62,6 +62,7 @@ body::before {
   box-shadow: 40px 40px 4rem 4rem rgba(0,0,0,0.3),
   -40px -40px 4rem 4rem rgba(0,0,0,0.3); */
   /* border: 3vw solid rgba(0,0,0,0.2); */
+  overflow: hidden;
 }
 /* --------------------------header-------------------------- */
 .header {
@@ -72,6 +73,7 @@ body::before {
   padding: 2vh 30px 0 30px;
   /* position: fixed; */
   /* z-index: 99999; */
+  position: relative;
 }
 .header.showColor {
   /* background-color:black; */
@@ -101,7 +103,11 @@ body::before {
 }
 .logo-image.showImage {
   opacity: 1;
+<<<<<<< HEAD
   transition: 1s;
+=======
+  transition:1S;
+>>>>>>> e14782d7e35300ce1c43d780830d1d624a508bff
 }
 /* 헤딩 텍스트 */
 .logo-title {
@@ -111,8 +117,13 @@ body::before {
   line-height: 6rem;
   margin: 0;
   transition: 2s;
+<<<<<<< HEAD
 }
 .logo-title span {
+=======
+} 
+.logo-title span{
+>>>>>>> e14782d7e35300ce1c43d780830d1d624a508bff
   position: absolute;
 }
 .logo-title.wT {
@@ -120,6 +131,7 @@ body::before {
   font-size: 5rem;
 }
 .logo-title .logoT {
+<<<<<<< HEAD
   font-size: 6rem;
   color: rgba(255, 255, 255, 1);
 }
@@ -127,6 +139,15 @@ body::before {
   color: rgb(255, 255, 255, 0);
 }
 .logo-title.midTime span {
+=======
+  font-size : 6rem;
+  color: rgba(255,255,255,1);
+} 
+ .logo-title.midTime{
+  color: rgb(255,255,255,0) 
+} 
+ .logo-title.midTime span{
+>>>>>>> e14782d7e35300ce1c43d780830d1d624a508bff
 }
 .midTime .firstT {
   position: absolute;
@@ -137,11 +158,18 @@ body::before {
   position: absolute;
   color: rgba(255, 255, 255, 1);
   transition: 2s;
+<<<<<<< HEAD
 }
 @keyframes moveF {
   0% {
   }
   50% {
+=======
+} 
+ @keyframes moveF{
+  0%{
+  }50%{
+>>>>>>> e14782d7e35300ce1c43d780830d1d624a508bff
     top: 5%;
     left: 50%;
     color: #ff0;
@@ -269,7 +297,17 @@ body::before {
 .tech-board {
   /* padding-top: 3rem; */
   width: 100%;
+
 }
+
+.tech-group {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tech-statement {
   /* width: 100%; */
   line-height: 6rem;
@@ -282,7 +320,7 @@ body::before {
   transition: 1s;
   letter-spacing: 0.2rem;
   /* padding: 230px 0px; */
-  height: 700px;
+
   /* padding-right: 30px; */
 }
 .tech-statement span:nth-child(1) {
@@ -378,6 +416,8 @@ body::before {
   background-color: #655ba0;
   transition: 0.5s;
 }
+
+
 /* 기술게시판 new 게시판 */
 /* 캐러셀 슬라이더 ui 코드 건들지 마세요 */
 .carousel {
@@ -429,14 +469,16 @@ body::before {
 /* 여기까지 캐러셀 코드 */
 .info {
   display: flex;
+  width: 100vw;
+  height: 500px;
 }
 .tech-news {
   /* background-color: skyblue; */
   background-image: url(../image/board-3700116_1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -50px 0;
   width: 650px;
-  height: 600px;
 }
 .tech-news:hover {
   background-image: none;
@@ -525,7 +567,8 @@ body::before {
   background-size: cover;
   background-position: center;
   width: 650px;
-  height: 600px;
+  cursor: pointer;
+  
 }
 .chat-board:hover {
   background-image: none;
@@ -598,7 +641,8 @@ body::before {
   background-repeat: no-repeat;
   background-size: cover;
   width: 650px;
-  height: 600px;
+
+  
 }
 .creator:hover {
   background-image: none;
@@ -618,5 +662,37 @@ body::before {
 }
 .copyright {
   margin-top: 25px;
+<<<<<<< HEAD
   display: block;
 }
+=======
+	display: block;
+}
+
+/* --------------------------signup,signin---------------------------------- */
+
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login-in.on {
+  display: none;
+}
+.logout.on {
+  display: none;
+}
+
+.login a {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+  padding: 10px 20px;
+  border-bottom: 1px solid;
+}
+
+.login a:hover {
+  background-color: rgba(0, 0, 0, 0.3)
+}
+>>>>>>> e14782d7e35300ce1c43d780830d1d624a508bff

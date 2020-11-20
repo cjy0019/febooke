@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/board.css">
 </head>
+
 <body>
   <div class="container">
     <!-- ---------------------------header-------------------------------------- -->
@@ -23,17 +25,24 @@
         <input type="text" class="search-input" placeholder="Board search: Enter keywords" aria-label="search">
         <button class="btn-search">검색</button>
       </form>
+      <div class="login">
+      <a class="login-in" href="#">로그인</a>
+      <a class="logout" href="#">로그아웃</a>
+    </div>
     </header>
     <!-- ---------------------------tech 게시판 section-------------------------------------- -->
     <div class="small-container">
       <div class="left-container">
         <section class="tech-board">
           <!-- tech share your technologies -->
+          <div class="tech-group">
           <p class="tech-statement">
             <span class="state-first">Share</span>
             <span class="state-second">your</span>
             <span class="state-third">technologies</span>
           </p>
+        </div>
+    </section>
           <!-- techboard 제목 -->
           <div class="tech-title">
             <h2>
@@ -89,12 +98,6 @@
             <!-- ---------------------------chatting 게시판 section-------------------------------------- -->
             <section class="chat-board">
               <h2 class="chat-title">Chatting</h2>
-              <ul class="chat-room">
-                <li>1번 room</li>
-                <li>2번 room</li>
-                <li>3번 room</li>
-                <li>4번 room</li>
-              </ul>
             </section>
             <section class="creator">
               <h2 class="creator-title">creator</h2>
@@ -211,4 +214,5 @@
   <script src="./js/main.js"></script>
   <!-- <script src="./js/board.js"></script> -->
 </body>
+
 </html>
